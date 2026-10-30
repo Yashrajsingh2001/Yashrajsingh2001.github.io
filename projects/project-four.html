@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Docling & Agent Skills · Yashraj Singh Boparai</title>
+    <meta
+      name="description"
+      content="High-performance document processing pipelines and agent tooling."
+    />
+    <meta
+      property="og:title"
+      content="Docling & Agent Skills · Yashraj Singh Boparai"
+    />
+    <meta
+      property="og:description"
+      content="High-performance document processing pipelines and agent tooling."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      document.documentElement.classList.add("js");
+      (function () {
+        try {
+          if (localStorage.getItem("portfolio-theme") === "dark") {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/app.css" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 bg-canvas border-b border-border">
+      <div
+        class="w-full h-16 flex items-center justify-between px-6 sm:px-10 lg:px-16"
+      >
+        <div class="flex items-center gap-8">
+          <a
+            class="text-2xl shrink-0 font-display font-normal leading-tight text-foreground"
+            href="../index.html"
+            >Yashraj Singh Boparai</a
+          >
+          <nav class="hidden lg:flex items-center gap-6" aria-label="Primary">
+            <a
+              href="../work.html"
+              class="font-display text-[15px] whitespace-nowrap text-foreground font-semibold underline underline-offset-8 decoration-1 decoration-accent"
+              >Work</a
+            >
+            <a
+              href="../index.html#about"
+              class="font-display text-[15px] whitespace-nowrap text-foreground-muted hover:text-foreground transition-colors"
+              >About</a
+            >
+            <a
+              href="../index.html#services"
+              class="font-display text-[15px] whitespace-nowrap text-foreground-muted hover:text-foreground transition-colors"
+              >Services</a
+            >
+            <a
+              href="../contact.html"
+              class="font-display text-[15px] whitespace-nowrap text-foreground-muted hover:text-foreground transition-colors"
+              >Contact</a
+            >
+          </nav>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <div class="flex items-center gap-1">
+            <button
+              type="button"
+              data-theme-toggle
+              aria-label="Switch to dark mode"
+              class="inline-flex items-center justify-center w-9 h-9 rounded-[var(--radius-input)] hover:bg-[var(--color-muted)] transition-colors cursor-pointer"
+              style="color: var(--color-foreground)"
+            ></button>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              href="https://www.linkedin.com/in/yashraj-singh-boparai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-glass h-9 px-3.5 text-sm"
+              >LinkedIn</a
+            >
+            <a
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yashrajcu@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-clay h-9 px-3.5 text-sm"
+              >Email</a
+            >
+          </div>
+        </div>
+        <button
+          type="button"
+          data-menu-toggle
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="lg:hidden p-2 rounded hover:bg-muted justify-self-end"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        data-menu
+        hidden
+        class="lg:hidden border-t border-border"
+      >
+        <div class="px-4 py-3 flex flex-col gap-2">
+          <a
+            href="../work.html"
+            class="font-display text-[16px] py-2 text-foreground font-semibold transition-colors"
+            >Work</a
+          >
+          <a
+            href="../index.html#about"
+            class="font-display text-[16px] py-2 text-foreground-muted transition-colors"
+            >About</a
+          >
+          <a
+            href="../index.html#services"
+            class="font-display text-[16px] py-2 text-foreground-muted transition-colors"
+            >Services</a
+          >
+          <a
+            href="../contact.html"
+            class="font-display text-[16px] py-2 text-foreground-muted transition-colors"
+            >Contact</a
+          >
+          <div class="flex items-center gap-2 mt-2">
+            <button
+              type="button"
+              data-theme-toggle
+              aria-label="Switch to dark mode"
+              class="inline-flex items-center justify-center w-9 h-9 rounded-[var(--radius-input)] hover:bg-[var(--color-muted)] transition-colors cursor-pointer"
+              style="color: var(--color-foreground)"
+            ></button>
+            <a
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yashrajcu@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-clay w-fit h-9 px-3.5 text-sm"
+              >Email</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-frame flex-1 flex flex-col">
+      <main class="flex-1">
+        <div class="w-full">
+          <section
+            class="bg-[var(--color-canvas-soft)] border-b-0"
+            style="
+              padding-top: var(--space-9);
+              padding-bottom: var(--space-9);
+              border-bottom: 1px solid var(--color-border);
+            "
+          >
+            <div class="w-full px-6 sm:px-10 lg:px-16">
+              <a
+                class="font-editorial italic text-[15px] text-foreground-muted hover:text-foreground transition-colors"
+                href="../work.html"
+                >← All work</a
+              >
+              <h1
+                class="mt-8 max-w-5xl font-display text-4xl sm:text-6xl lg:text-7xl leading-[0.98] tracking-tight text-foreground"
+              >
+                Docling &amp; Agent Skills
+              </h1>
+              <p
+                class="mt-6 max-w-2xl text-lg leading-relaxed text-foreground-muted"
+              >
+                High-performance document processing pipelines and agent
+                tooling.
+              </p>
+              <dl
+                class="mt-12 grid grid-cols-2 gap-6 border-t border-border pt-6 sm:grid-cols-4"
+              >
+                <div>
+                  <dt
+                    class="font-editorial italic text-[15px] text-foreground-muted"
+                  >
+                    Client
+                  </dt>
+                  <dd class="mt-2 font-display text-foreground">Tooling</dd>
+                </div>
+                <div>
+                  <dt
+                    class="font-editorial italic text-[15px] text-foreground-muted"
+                  >
+                    Year
+                  </dt>
+                  <dd class="mt-2 font-display text-foreground">2024</dd>
+                </div>
+                <div>
+                  <dt
+                    class="font-editorial italic text-[15px] text-foreground-muted"
+                  >
+                    Discipline
+                  </dt>
+                  <dd class="mt-2 font-display text-foreground">AI tooling</dd>
+                </div>
+                <div>
+                  <dt
+                    class="font-editorial italic text-[15px] text-foreground-muted"
+                  >
+                    Role
+                  </dt>
+                  <dd class="mt-2 font-display text-foreground">
+                    Pipelines, Agent skills, Automation
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="mt-12">
+              <div
+                class="relative w-full overflow-hidden aspect-[21/9]"
+                style="border-radius: 0; background: var(--color-muted)"
+              >
+                <img
+                  alt="Close-up of a dark quantum circuit board"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  src="../images/ibm/ibm-quantum-circuit-board-macro.jpg"
+                />
+                <span
+                  class="absolute bottom-3 left-4 font-editorial italic text-xs"
+                  style="
+                    color: rgba(255, 255, 255, 0.9);
+                    letter-spacing: 0.08em;
+                    text-shadow: rgba(0, 0, 0, 0.45) 0px 1px 8px;
+                  "
+                  >04</span
+                >
+              </div>
+            </div>
+            <div class="w-full px-6 sm:px-10 lg:px-16 mt-16">
+              <div class="max-w-3xl space-y-6">
+                <p class="text-xl leading-relaxed text-foreground">
+                  Documents arrive as PDFs, slides, spreadsheets and recordings.
+                  Agents need them as clean text and structure.
+                </p>
+                <p class="leading-relaxed text-foreground-muted">
+                  Docling-based pipelines convert them to Markdown and JSON.
+                  Agent skills wrap those pipelines so they run from a single
+                  prompt.
+                </p>
+              </div>
+              <div class="mt-16">
+                <p
+                  class="font-editorial italic text-[15px] text-foreground-muted mb-6"
+                >
+                  Deliverables
+                </p>
+                <ul class="grid max-w-3xl grid-cols-1 gap-x-12 sm:grid-cols-2">
+                  <li
+                    class="flex items-baseline gap-4 border-t border-border py-3"
+                  >
+                    <span
+                      class="font-editorial italic text-[11px] text-foreground-muted"
+                      >01</span
+                    ><span class="font-display text-foreground"
+                      >Document conversion pipelines</span
+                    >
+                  </li>
+                  <li
+                    class="flex items-baseline gap-4 border-t border-border py-3"
+                  >
+                    <span
+                      class="font-editorial italic text-[11px] text-foreground-muted"
+                      >02</span
+                    ><span class="font-display text-foreground"
+                      >Agent skills</span
+                    >
+                  </li>
+                  <li
+                    class="flex items-baseline gap-4 border-t border-border py-3"
+                  >
+                    <span
+                      class="font-editorial italic text-[11px] text-foreground-muted"
+                      >03</span
+                    ><span class="font-display text-foreground"
+                      >Format handling</span
+                    >
+                  </li>
+                  <li
+                    class="flex items-baseline gap-4 border-t border-border py-3"
+                  >
+                    <span
+                      class="font-editorial italic text-[11px] text-foreground-muted"
+                      >04</span
+                    ><span class="font-display text-foreground"
+                      >Usage notes</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2">
+                <figure>
+                  <div
+                    class="relative w-full overflow-hidden print-ring aspect-[4/3]"
+                    style="
+                      border-radius: var(--radius-sm);
+                      background: var(--color-muted);
+                    "
+                  >
+                    <img
+                      alt="Isometric diagram of one node connected to a grid of blocks"
+                      loading="lazy"
+                      class="absolute inset-0 h-full w-full object-cover"
+                      src="../images/ibm/isometric-cloud-blocks.jpg"
+                    />
+                  </div>
+                  <figcaption
+                    class="font-editorial italic text-[15px] text-foreground-muted mt-3"
+                  >
+                    01 / Inputs to one pipeline
+                  </figcaption>
+                </figure>
+                <figure>
+                  <div
+                    class="relative w-full overflow-hidden print-ring aspect-[4/3]"
+                    style="
+                      border-radius: var(--radius-sm);
+                      background: var(--color-muted);
+                    "
+                  >
+                    <img
+                      alt="Folded white paper abstract"
+                      loading="lazy"
+                      class="absolute inset-0 h-full w-full object-cover"
+                      src="../images/ibm/ibm-corporate-abstract-white-paper-fold.jpg"
+                    />
+                  </div>
+                  <figcaption
+                    class="font-editorial italic text-[15px] text-foreground-muted mt-3"
+                  >
+                    02 / Clean structured output
+                  </figcaption>
+                </figure>
+              </div>
+              <p
+                class="mt-20 max-w-4xl font-editorial italic text-2xl sm:text-3xl leading-snug text-foreground"
+              >
+                Messy documents become inputs an agent can read.
+              </p>
+              <div
+                class="mt-20 flex items-start justify-between gap-8 border-t border-border pt-8"
+              >
+                <a href="project-three.html" class="group"
+                  ><p
+                    class="font-editorial italic text-[15px] text-foreground-muted"
+                  >
+                    ← Previous
+                  </p>
+                  <p
+                    class="mt-2 font-display text-foreground transition-colors group-hover:italic"
+                  >
+                    NebulaForge
+                  </p></a
+                >
+                <a href="project-five.html" class="group text-right"
+                  ><p
+                    class="font-editorial italic text-[15px] text-foreground-muted"
+                  >
+                    Next →
+                  </p>
+                  <p
+                    class="mt-2 font-display text-foreground transition-colors group-hover:italic"
+                  >
+                    Git Spice / Stacked PR Workflows
+                  </p></a
+                >
+              </div>
+              <div class="mt-20">
+                <p
+                  class="font-editorial italic text-[15px] text-foreground-muted mb-4"
+                >
+                  Next project
+                </p>
+                <a
+                  href="../contact.html"
+                  class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed btn-clay px-8 h-12 text-base"
+                  >Start a project like this</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="bg-footer-band text-footer-band-foreground">
+        <div class="w-full pt-16 pb-8 px-6 sm:px-10 lg:px-16">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_2fr] gap-10 lg:gap-12"
+          >
+            <div>
+              <div class="mb-5 font-display text-3xl font-normal leading-tight">
+                Yashraj Singh Boparai
+              </div>
+              <p
+                class="text-sm max-w-[280px] font-sans leading-[1.8] tracking-[0.4px] text-footer-band-foreground/85"
+              >
+                Full-Stack Software Developer at IBM India Software Labs,
+                Product Excellence Office.
+              </p>
+            </div>
+            <div>
+              <h6
+                class="text-xs mb-5 font-sans font-bold uppercase tracking-[1.2px] leading-[1.8] text-footer-band-foreground/60"
+              >
+                Site
+              </h6>
+              <ul
+                class="flex flex-col gap-3 text-sm font-sans leading-[1.8] tracking-[0.4px]"
+              >
+                <li>
+                  <a
+                    href="../work.html"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Work</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../index.html#about"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6
+                class="text-xs mb-5 font-sans font-bold uppercase tracking-[1.2px] leading-[1.8] text-footer-band-foreground/60"
+              >
+                Elsewhere
+              </h6>
+              <ul
+                class="flex flex-col gap-3 text-sm font-sans leading-[1.8] tracking-[0.4px]"
+              >
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/yashraj-singh-boparai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../index.html#services"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../contact.html"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6
+                class="text-xs mb-5 font-sans font-bold uppercase tracking-[1.2px] leading-[1.8] text-footer-band-foreground/60"
+              >
+                Get in touch
+              </h6>
+              <ul
+                class="flex flex-col gap-3 text-sm font-sans leading-[1.8] tracking-[0.4px]"
+              >
+                <li>
+                  <a
+                    href="../contact.html"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Start a conversation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yashrajcu@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >yashrajcu@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="mt-12 pt-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 text-xs font-sans tracking-[0.4px] border-t border-white/15 text-footer-band-foreground/70"
+          >
+            <span>© 2026 Yashraj Singh Boparai. All rights reserved.</span>
+            <span class="flex flex-wrap items-center gap-4"
+              ><a
+                href="https://getdesign.md/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-colors opacity-85 hover:opacity-100"
+                >Template from getdesign.md</a
+              ></span
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../assets/main.js"></script>
+  </body>
+</html>
