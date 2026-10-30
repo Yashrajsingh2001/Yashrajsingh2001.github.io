@@ -1,56 +1,31 @@
 # Agent Guide: Yashrajsingh2001.github.io
 
-Personal portfolio website for Yashraj Singh Boparai. Pure static HTML/CSS/JS deployed to GitHub Pages.
+Static portfolio for Yashraj Singh Boparai. Pure HTML/CSS/JS deployed to GitHub Pages.
 
-## Site & Hosting
+## Core Rules
 
 - **Live URL**: `https://yashrajsingh2001.github.io/`
-- **Deployment**: Automatic via GitHub Actions [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on push to `main` (uploads `src/` as the Pages artifact).
-- **Runtime**: Static web server, no build step required.
+- **Deploy**: GitHub Actions (`.github/workflows/deploy.yml`) on `main` push. Deploys `src/`.
+- **Pre-commit**: Husky + `lint-staged` auto-formats staged files on `git commit`. No manual Prettier run required.
+- **Manual format**: `npm run format` / `npm run format:check` (optional).
+- **Local server**: `npm run serve` (serves `src/` on `http://127.0.0.1:8765`).
+- **`.nojekyll`**: In `src/`. Must stay empty (0 bytes). Skips Jekyll on Pages.
+- **`app.css`**: Vendor Tailwind bundle. Never edit or format.
 
-## Directory Structure
+## Structure
 
 ```
-.
-├── src/                        # All source code and pages deployed to Pages
-│   ├── index.html              # Homepage (hero, statement, work rows, about, contact CTA)
-│   ├── work.html               # Filterable projects gallery
-│   ├── contact.html            # Contact form (submits to Gmail compose)
-│   ├── .nojekyll               # Bypasses Jekyll on GitHub Pages
-│   ├── projects/               # Case studies
-│   │   ├── project-one.html    # Propel & AI Developer Tooling
-│   │   ├── project-two.html    # Carbon Design System Integrations
-│   │   ├── project-three.html  # NebulaForge
-│   │   ├── project-four.html   # Docling & Agent Skills
-│   │   ├── project-five.html   # Git Spice / Stacked PR Workflows
-│   │   └── project-six.html    # Future case study
-│   ├── assets/
-│   │   ├── app.css             # Template Tailwind bundle (DO NOT modify or format)
-│   │   ├── site.css            # Custom styles, animations, theme variables
-│   │   ├── fonts.css           # Font declarations (@font-face)
-│   │   ├── main.js             # Theme toggle, mobile menu, scroll reveal, preview
-│   │   └── fonts/              # Self-hosted WOFF2 fonts (Inter, Garamond, JetBrains)
-│   └── images/
-│       ├── ibm/                # Active visual assets
-│       └── work/               # Template fallback images
-├── handoff/                    # Task and session handoff documentation
-└── .github/workflows/          # GitHub Actions deployment
+src/
+├── index.html            # / (home)
+├── work.html             # /work.html
+├── contact.html          # /contact.html
+├── .nojekyll             # Empty Jekyll bypass
+├── projects/             # /projects/project-*.html
+├── assets/               # app.css, site.css, fonts.css, main.js, fonts/
+└── images/               # ibm/, work/
 ```
 
-## Linking Rules
+## Relative Links
 
-- **Root pages (`src/`)** (`index.html`, `work.html`, `contact.html`):
-  - Assets: `assets/app.css`, `assets/site.css`, `assets/main.js`
-  - Images: `images/ibm/...`
-  - Project links: `projects/project-one.html`
-- **Project pages (`src/projects/`)** (`projects/project-*.html`):
-  - Assets: `../assets/app.css`, `../assets/site.css`, `../assets/main.js`
-  - Images: `../images/ibm/...`
-  - Navigation: `../index.html`, `../work.html`, `../contact.html`
-  - Peer projects: `project-two.html` (same directory)
-
-## Code Quality & Tooling
-
-- **Prettier**: `npm run format` / `npm run format:check`.
-- **Pre-commit**: Husky + `lint-staged` auto-formats staged files on commit.
-- **Local preview**: `npm run serve` (runs `python3 -m http.server 8765 --directory src --bind 127.0.0.1`).
+- `src/*.html`: `assets/...`, `images/...`, `projects/project-*.html`
+- `src/projects/*.html`: `../assets/...`, `../images/...`, `../index.html`, `../work.html`, `../contact.html`, `project-*.html`
