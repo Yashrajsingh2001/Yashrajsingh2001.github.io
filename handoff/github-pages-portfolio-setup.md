@@ -3,8 +3,9 @@
 ## 1. Context & Metadata
 
 - **Repository**: `https://github.com/Yashrajsingh2001/Yashrajsingh2001.github.io`
-- **Current Status**: Complete (ready for commit and push)
-- **Last Updated**: 2026-10-30 14:02 IST
+- **Live URL**: `https://yashrajsingh2001.github.io/`
+- **Current Status**: Complete & Live
+- **Last Updated**: 2026-10-30 14:06 IST
 - **Objective**: Host Yashraj Singh Boparai's static personal portfolio on GitHub Pages with automated CI/CD, Next.js style `src/` folder structure, pre-commit formatting, and AI agent instructions.
 
 ## 2. Technical Scope & Affected Files
@@ -21,6 +22,7 @@
   - `.prettierrc` & `.prettierignore`: Code formatting rules and exclusions.
   - `.editorconfig`: Editor consistency.
   - `package.json`: Scripts for formatting, husky, and local testing (`npm run serve`).
+  - `README.md`: Project overview, development scripts, and deployment instructions.
   - `AGENTS.md`: Concise guide for future AI coding agents.
 
 ## 3. Implementation Plan & Progress
@@ -32,8 +34,8 @@
 - [x] Organize structure with `src/` root and `src/projects/` subfolder keeping original route filenames
 - [x] Update relative asset, image, and navigation links across all pages
 - [x] Add Husky and `lint-staged` pre-commit Prettier formatting hook
-- [x] Create `AGENTS.md` documentation
-- [ ] Push to `main` and verify live GitHub Pages build
+- [x] Create `README.md` and `AGENTS.md` documentation
+- [x] Push to `main` and verify live GitHub Pages build
 
 ## 4. Work Completed & Code Changes
 
@@ -42,6 +44,7 @@
   - `src/projects/`: Organizes `project-one.html` through `project-six.html`.
   - `.github/workflows/deploy.yml`: Pages deployment workflow (path: `src`).
   - `.husky/pre-commit` & `.git/hooks/pre-commit`: Pre-commit formatting hook.
+  - `README.md`: Repository documentation.
   - `AGENTS.md`: AI instructions and architecture reference.
   - `.prettierrc`, `.prettierignore`, `.editorconfig`, `package.json`: Tooling.
 - **Modified**:
@@ -50,18 +53,19 @@
 
 ## 5. Suggested Skills for Next Session
 
-- `github-cli`: For pushing and inspecting GitHub Actions deployment runs.
-- `ego-browser`: For visual verification of live site at `https://yashrajsingh2001.github.io/`.
+- `github-cli`: For inspecting GitHub Actions deployment runs or managing issues.
+- `ego-browser`: For visual verification and cross-browser testing.
+- `carbon-content-writer`: For updating case study copy and resume achievements.
 
 ## 6. Next Steps
 
-1. Commit all files to `main` branch and push to `origin/main`.
-2. Ensure repository Settings -> Pages -> Build and deployment Source is set to **GitHub Actions**.
-3. Verify live deployment at `https://yashrajsingh2001.github.io/`.
+1. Update real project copy in `src/projects/project-*.html` with production details.
+2. Verify external links (LinkedIn, GitHub) in header and footer across all pages.
+3. Replace placeholder case study imagery with real screenshots if desired.
 
 ## 7. Verification
 
-- **Formatting Test**: `npx prettier --check .` (Passing)
-- **Pre-commit Hook**: Installed and executable in `.husky/` and `.git/hooks/`
-- **Local Preview**: `npm run serve` (Ready)
-- **Status**: Passing locally.
+- **Formatting Test**: `npm run format:check` (Passing)
+- **Pre-commit Hook**: Installed and verified with Husky + lint-staged
+- **Live Site**: Verified live at `https://yashrajsingh2001.github.io/`
+- **Status**: Complete & Passing.
