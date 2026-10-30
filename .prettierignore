@@ -2,6 +2,9 @@
 .git/
 
 # Compiled / minified vendor bundles & assets
+src/assets/app.css
+src/assets/fonts/
+src/images/
 assets/app.css
 assets/fonts/
 images/

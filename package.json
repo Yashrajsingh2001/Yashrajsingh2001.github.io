@@ -6,7 +6,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky || true",
-    "serve": "python3 -m http.server 8765 --bind 127.0.0.1"
+    "serve": "python3 -m http.server 8765 --directory src --bind 127.0.0.1"
   },
   "lint-staged": {
     "*.{html,js,css,json,md,yml,yaml}": "npx prettier --write"

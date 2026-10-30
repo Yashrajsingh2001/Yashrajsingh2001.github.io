@@ -4,20 +4,23 @@
 
 - **Repository**: `https://github.com/Yashrajsingh2001/Yashrajsingh2001.github.io`
 - **Current Status**: Complete (ready for commit and push)
-- **Last Updated**: 2026-10-30 13:52 IST
-- **Objective**: Host Yashraj Singh Boparai's static personal portfolio on GitHub Pages with automated CI/CD, clean folder structure, pre-commit formatting, and AI agent instructions.
+- **Last Updated**: 2026-10-30 14:02 IST
+- **Objective**: Host Yashraj Singh Boparai's static personal portfolio on GitHub Pages with automated CI/CD, Next.js style `src/` folder structure, pre-commit formatting, and AI agent instructions.
 
 ## 2. Technical Scope & Affected Files
 
-- **Root Pages**: `index.html` (home), `work.html` (portfolio gallery), `contact.html` (get in touch).
-- **Projects Subfolder (`projects/`)**: `project-one.html` to `project-six.html` located in `projects/` with relative links to `../assets/`, `../images/`, `../index.html`, etc.
-- **Assets (`assets/`)**: `app.css`, `site.css`, `fonts.css`, `main.js`, and self-hosted fonts in `assets/fonts/`.
-- **CI/CD (`.github/workflows/deploy.yml`)**: GitHub Actions workflow deploying to GitHub Pages environment via `actions/deploy-pages@v4`.
+- **Source Code (`src/`)**:
+  - `src/index.html` (home), `src/work.html` (portfolio gallery), `src/contact.html` (get in touch).
+  - `src/projects/`: `project-one.html` to `project-six.html` case studies.
+  - `src/assets/`: `app.css`, `site.css`, `fonts.css`, `main.js`, and self-hosted fonts in `src/assets/fonts/`.
+  - `src/images/`: `ibm/` and `work/` image assets.
+  - `src/.nojekyll`: Bypasses Jekyll on GitHub Pages (empty marker file).
+- **CI/CD (`.github/workflows/deploy.yml`)**: GitHub Actions workflow deploying `src/` to GitHub Pages via `actions/deploy-pages@v4`.
 - **Tooling & Pre-commit**:
   - `.husky/pre-commit` & `.git/hooks/pre-commit`: Runs `lint-staged` with Prettier on commit.
   - `.prettierrc` & `.prettierignore`: Code formatting rules and exclusions.
   - `.editorconfig`: Editor consistency.
-  - `package.json`: Scripts for formatting, husky, and local testing.
+  - `package.json`: Scripts for formatting, husky, and local testing (`npm run serve`).
   - `AGENTS.md`: Concise guide for future AI coding agents.
 
 ## 3. Implementation Plan & Progress
@@ -25,8 +28,8 @@
 - [x] Copy portfolio site from `portfolio/` to `Yashrajsingh2001.github.io/`
 - [x] Setup `.prettierrc`, `.prettierignore`, `.editorconfig`, and `package.json`
 - [x] Run Prettier across all codebase files
-- [x] Setup GitHub Pages CI/CD workflow (`.github/workflows/deploy.yml`) and `.nojekyll`
-- [x] Organize HTML file structure: maintain clean `projects/` subfolder with named HTML files
+- [x] Setup GitHub Pages CI/CD workflow (`.github/workflows/deploy.yml`) deploying `src/`
+- [x] Organize structure with `src/` root and `src/projects/` subfolder keeping original route filenames
 - [x] Update relative asset, image, and navigation links across all pages
 - [x] Add Husky and `lint-staged` pre-commit Prettier formatting hook
 - [x] Create `AGENTS.md` documentation
@@ -35,15 +38,15 @@
 ## 4. Work Completed & Code Changes
 
 - **Created**:
-  - `projects/`: Subdirectory organizing `project-one.html` through `project-six.html`.
-  - `.github/workflows/deploy.yml`: Pages deployment workflow.
-  - `.nojekyll`: Prevents Jekyll asset filtering.
+  - `src/`: Houses all web pages, assets, images, and `.nojekyll`.
+  - `src/projects/`: Organizes `project-one.html` through `project-six.html`.
+  - `.github/workflows/deploy.yml`: Pages deployment workflow (path: `src`).
   - `.husky/pre-commit` & `.git/hooks/pre-commit`: Pre-commit formatting hook.
   - `AGENTS.md`: AI instructions and architecture reference.
   - `.prettierrc`, `.prettierignore`, `.editorconfig`, `package.json`: Tooling.
 - **Modified**:
-  - `index.html` & `work.html`: Updated project links to `projects/project-*.html`.
-  - `projects/project-*.html`: Updated asset paths (`../assets/`), image paths (`../images/`), and page links (`../index.html`, `../work.html`, `../contact.html`).
+  - `src/index.html` & `src/work.html`: Updated project links to `projects/project-*.html`.
+  - `src/projects/project-*.html`: Updated asset paths (`../assets/`), image paths (`../images/`), and page links (`../index.html`, `../work.html`, `../contact.html`).
 
 ## 5. Suggested Skills for Next Session
 
