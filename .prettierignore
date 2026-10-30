@@ -1,0 +1,13 @@
+# Version control
+.git/
+
+# Compiled / minified vendor bundles & assets
+assets/app.css
+assets/fonts/
+images/
+
+# Package managers & builds
+node_modules/
+dist/
+build/
+.DS_Store

@@ -1,0 +1,20 @@
+{
+  "name": "yashrajsingh2001.github.io",
+  "version": "1.0.0",
+  "description": "Personal Portfolio of Yashraj Singh Boparai",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky || true",
+    "serve": "python3 -m http.server 8765 --bind 127.0.0.1"
+  },
+  "lint-staged": {
+    "*.{html,js,css,json,md,yml,yaml}": "npx prettier --write"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.0"
+  },
+  "private": true
+}
