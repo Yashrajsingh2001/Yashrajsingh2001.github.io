@@ -2,15 +2,26 @@
 
 Static portfolio for Yashraj Singh Boparai. Pure HTML/CSS/JS deployed to GitHub Pages.
 
-## Core Rules
+## Core Rules & Guardrails
 
 - **Live URL**: `https://yashrajsingh2001.github.io/`
-- **Deploy**: GitHub Actions (`.github/workflows/deploy.yml`) on `main` push. Deploys `src/`.
-- **Pre-commit**: Husky + `lint-staged` auto-formats staged files on `git commit`. No manual Prettier run required.
-- **Manual format**: `npm run format` / `npm run format:check` (optional).
-- **Local server**: `npm run serve` (serves `src/` on `http://127.0.0.1:8765`).
-- **`.nojekyll`**: In `src/`. Must stay empty (0 bytes). Skips Jekyll on Pages.
-- **`app.css`**: Vendor Tailwind bundle. Never edit or format.
+- **Source root**: All web pages, styles, scripts, and media must stay inside `src/`.
+- **`app.css` (`src/assets/app.css`)**: Vendor Tailwind bundle. Never edit, recompile, or format.
+- **`.nojekyll` (`src/.nojekyll`)**: Must stay completely empty (0 bytes). Skips Jekyll on GitHub Pages.
+- **Zero build step**: Pure static site. No webpack/vite/bundler required.
+
+## Automation & Tooling
+
+- **Pre-commit**: Husky (`.husky/pre-commit`) + `lint-staged` auto-formats staged files on `git commit`. No manual formatting step needed.
+- **Deploy**: GitHub Actions (`.github/workflows/deploy.yml`) auto-deploys `src/` to Pages on every `git push origin main`.
+- **Local preview**: `npm run serve` (serves `src/` on `http://127.0.0.1:8765`).
+
+## Workflow After Code Changes
+
+1. Edit files inside `src/`.
+2. Test: `npm run serve`.
+3. Commit: `git add <files> && git commit -m "<msg>"` (Husky auto-formats).
+4. Publish: `git push origin main` (GitHub Actions deploys live).
 
 ## Structure
 
