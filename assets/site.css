@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+section[id],
+footer[id] {
+  scroll-margin-top: 64px;
+}
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.6s var(--d, 0ms),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) var(--d, 0ms);
+  will-change: opacity, transform;
+}
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+[data-work-preview] {
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-muted);
+  box-shadow: var(--shadow-lg);
+}
+[data-work-preview] img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
