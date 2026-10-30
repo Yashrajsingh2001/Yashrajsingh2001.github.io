@@ -1,0 +1,1216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yashraj Singh Boparai · Full-Stack Software Developer</title>
+    <meta
+      name="description"
+      content="Yashraj Singh Boparai is a full-stack software developer at IBM India Software Labs focused on frontend architecture, React / Next.js, TypeScript, Carbon Design System and AI-assisted developer tooling."
+    />
+    <meta
+      property="og:title"
+      content="Yashraj Singh Boparai · Full-Stack Software Developer"
+    />
+    <meta
+      property="og:description"
+      content="Frontend architecture, React / Next.js, TypeScript, Carbon Design System and AI-assisted developer workflows."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      document.documentElement.classList.add("js");
+      (function () {
+        try {
+          if (localStorage.getItem("portfolio-theme") === "dark") {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link rel="stylesheet" href="assets/app.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yashraj Singh Boparai",
+        "email": "yashrajcu@gmail.com",
+        "jobTitle": "Full-Stack Software Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "IBM India Software Labs"
+        }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 bg-canvas border-b border-border">
+      <div
+        class="w-full h-16 flex items-center justify-between px-6 sm:px-10 lg:px-16"
+      >
+        <div class="flex items-center gap-8">
+          <a
+            class="text-2xl shrink-0 font-display font-normal leading-tight text-foreground"
+            href="#top"
+            >Yashraj Singh Boparai</a
+          >
+          <nav class="hidden lg:flex items-center gap-6" aria-label="Primary">
+            <a
+              href="work.html"
+              class="font-display text-[15px] whitespace-nowrap text-foreground-muted hover:text-foreground transition-colors"
+              >Work</a
+            >
+            <a
+              href="#about"
+              class="font-display text-[15px] whitespace-nowrap text-foreground-muted hover:text-foreground transition-colors"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="font-display text-[15px] whitespace-nowrap text-foreground-muted hover:text-foreground transition-colors"
+              >Services</a
+            >
+            <a
+              href="contact.html"
+              class="font-display text-[15px] whitespace-nowrap text-foreground-muted hover:text-foreground transition-colors"
+              >Contact</a
+            >
+          </nav>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <div class="flex items-center gap-1">
+            <button
+              type="button"
+              data-theme-toggle
+              aria-label="Switch to dark mode"
+              class="inline-flex items-center justify-center w-9 h-9 rounded-[var(--radius-input)] hover:bg-[var(--color-muted)] transition-colors cursor-pointer"
+              style="color: var(--color-foreground)"
+            ></button>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              href="https://www.linkedin.com/in/yashraj-singh-boparai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-glass h-9 px-3.5 text-sm"
+              >LinkedIn</a
+            >
+            <a
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yashrajcu@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-clay h-9 px-3.5 text-sm"
+              >Email</a
+            >
+          </div>
+        </div>
+        <button
+          type="button"
+          data-menu-toggle
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="lg:hidden p-2 rounded hover:bg-muted justify-self-end"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        data-menu
+        hidden
+        class="lg:hidden border-t border-border"
+      >
+        <div class="px-4 py-3 flex flex-col gap-2">
+          <a
+            href="work.html"
+            class="font-display text-[16px] py-2 text-foreground-muted transition-colors"
+            >Work</a
+          >
+          <a
+            href="#about"
+            class="font-display text-[16px] py-2 text-foreground-muted transition-colors"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="font-display text-[16px] py-2 text-foreground-muted transition-colors"
+            >Services</a
+          >
+          <a
+            href="contact.html"
+            class="font-display text-[16px] py-2 text-foreground-muted transition-colors"
+            >Contact</a
+          >
+          <div class="flex items-center gap-2 mt-2">
+            <button
+              type="button"
+              data-theme-toggle
+              aria-label="Switch to dark mode"
+              class="inline-flex items-center justify-center w-9 h-9 rounded-[var(--radius-input)] hover:bg-[var(--color-muted)] transition-colors cursor-pointer"
+              style="color: var(--color-foreground)"
+            ></button>
+            <a
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yashrajcu@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-clay w-fit h-9 px-3.5 text-sm"
+              >Email</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-frame flex-1 flex flex-col" id="top">
+      <main class="flex-1">
+        <div class="w-full">
+          <!-- Hero -->
+          <section
+            class="paper-grid relative overflow-hidden border-b border-border bg-canvas"
+          >
+            <div
+              aria-hidden="true"
+              class="sun-halo absolute inset-x-0 -top-16 h-[440px]"
+            ></div>
+            <div class="relative w-full px-6 sm:px-10 lg:px-16">
+              <div class="flex flex-wrap justify-between gap-4 pt-8">
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >001 / Frontend architecture</span
+                >
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >002 / Design systems</span
+                >
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >003 / AI tooling</span
+                >
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >004 / Performance</span
+                >
+              </div>
+              <div class="mt-14 hidden justify-end sm:flex">
+                <div class="flex items-start gap-3">
+                  <span
+                    aria-hidden="true"
+                    class="mt-1 h-9 w-1 bg-foreground"
+                  ></span>
+                  <div>
+                    <p class="font-display tracking-[0.06em] text-foreground">
+                      Yashraj Singh Boparai
+                    </p>
+                    <p
+                      class="font-editorial italic text-[15px] text-foreground-muted mt-1"
+                    >
+                      Full-stack developer · IBM ISL, PEO
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h1 class="mt-4 font-display text-display-hero text-foreground">
+                <span class="block">Yashraj Singh</span
+                ><span class="block ml-[16vw]">Boparai</span>
+              </h1>
+              <div
+                class="mt-14 flex flex-wrap justify-between gap-4 border-t border-border pt-4"
+              >
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >Phase/<span class="text-foreground">Listen</span></span
+                >
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >Phase/<span class="text-foreground">Design</span></span
+                >
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >Phase/<span class="text-foreground">Build</span></span
+                >
+                <span
+                  class="font-editorial italic text-[15px] text-foreground-muted"
+                  >Phase/<span class="text-foreground">Ship</span></span
+                >
+              </div>
+              <div
+                class="mt-14 flex flex-wrap items-end justify-between gap-10 pb-10"
+              >
+                <div>
+                  <ul class="space-y-1">
+                    <li
+                      class="font-display text-xl sm:text-2xl tracking-tight text-foreground"
+                    >
+                      React &amp; Next.js
+                    </li>
+                    <li
+                      class="font-display text-xl sm:text-2xl tracking-tight text-foreground"
+                    >
+                      TypeScript
+                    </li>
+                    <li
+                      class="font-display text-xl sm:text-2xl tracking-tight text-foreground"
+                    >
+                      Carbon Design System
+                    </li>
+                    <li
+                      class="font-display text-xl sm:text-2xl tracking-tight text-foreground"
+                    >
+                      AI-assisted workflows
+                    </li>
+                    <li
+                      class="font-display text-xl sm:text-2xl tracking-tight text-foreground"
+                    >
+                      Developer tooling
+                    </li>
+                  </ul>
+                  <p
+                    class="font-editorial italic text-[15px] text-foreground-muted mt-6 sm:hidden"
+                  >
+                    Full-stack developer · IBM ISL, PEO
+                  </p>
+                  <p
+                    class="mt-4 inline-flex items-center gap-2 font-editorial italic text-sm tracking-normal text-foreground-muted sm:mt-6"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="inline-block size-1.5 rounded-full bg-accent"
+                    ></span
+                    ><span>Open to engineering conversations</span>
+                  </p>
+                  <div
+                    class="mt-5 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap"
+                  >
+                    <a
+                      href="#work"
+                      class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-clay px-8 h-12 text-base w-full sm:w-auto"
+                      >View work</a
+                    >
+                    <a
+                      href="contact.html"
+                      class="inline-flex items-center justify-center whitespace-nowrap rounded font-semibold transition-colors cursor-pointer btn-glass px-8 h-12 text-base w-full sm:w-auto"
+                      >Start a conversation</a
+                    >
+                  </div>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="font-editorial italic text-[15px] text-foreground-muted"
+                  >
+                    GANDHINAGAR / 2026
+                  </p>
+                  <p
+                    class="font-editorial italic text-[15px] text-foreground-muted mt-1"
+                  >
+                    23.22° N / 72.65° E
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Statement -->
+          <div data-reveal>
+            <section
+              id="about"
+              class="bg-[var(--color-canvas-soft)]"
+              style="
+                padding-top: var(--space-9);
+                padding-bottom: var(--space-9);
+                border-bottom: 1px solid var(--color-border);
+              "
+            >
+              <div class="relative w-full px-6 sm:px-10 lg:px-16">
+                <img
+                  alt="Isometric diagram of one node connected to a grid of blocks"
+                  loading="lazy"
+                  class="absolute right-[6%] top-0 hidden w-56 -translate-y-8 object-cover grayscale lg:block aspect-[3/4]"
+                  src="images/ibm/isometric-cloud-blocks.jpg"
+                  style="border-radius: var(--radius-sm)"
+                />
+                <img
+                  alt="Isometric stack of cubes"
+                  loading="lazy"
+                  class="absolute bottom-0 right-[24%] hidden w-40 translate-y-6 object-cover grayscale lg:block aspect-square"
+                  src="images/ibm/isometric-cube-stack.jpg"
+                  style="border-radius: var(--radius-sm)"
+                />
+                <p
+                  class="max-w-4xl font-display text-3xl sm:text-5xl leading-[1.1] tracking-tight text-foreground"
+                >
+                  <span>I build </span
+                  ><span class="bg-accent-soft px-1 rounded-[4px]"
+                    >frontend systems</span
+                  ><span> that scale, </span
+                  ><span class="bg-accent-soft px-1 rounded-[4px]"
+                    >design systems</span
+                  ><span> that stay accessible, and </span
+                  ><span class="bg-accent-soft px-1 rounded-[4px]"
+                    >AI tooling</span
+                  ><span> that makes engineers </span
+                  ><span class="bg-accent-soft px-1 rounded-[4px]">faster</span
+                  ><span>.</span>
+                </p>
+                <p
+                  class="mt-12 max-w-3xl font-editorial italic text-2xl sm:text-3xl leading-tight text-foreground"
+                >
+                  Root cause first, then fix.
+                </p>
+                <p
+                  class="font-editorial italic text-[15px] text-foreground-muted mt-4 max-w-md normal-case tracking-normal"
+                >
+                  Full-Stack Software Developer at IBM India Software Labs,
+                  Gandhinagar, in the Product Excellence Office.
+                </p>
+                <div class="mt-10">
+                  <a
+                    href="#services"
+                    class="font-editorial italic text-sm tracking-normal text-foreground-muted hover:text-foreground transition-colors"
+                    >More about the practice ↗</a
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Work archive -->
+          <section
+            id="work"
+            class="bg-[var(--color-canvas-soft)]"
+            style="
+              padding-top: var(--space-9);
+              padding-bottom: var(--space-9);
+              border-bottom: 1px solid var(--color-border);
+            "
+          >
+            <div class="w-full px-6 sm:px-10 lg:px-16">
+              <h2
+                class="font-display text-5xl sm:text-7xl tracking-tight text-foreground"
+              >
+                The archive
+              </h2>
+              <p
+                class="mt-3 max-w-xl font-display text-lg sm:text-xl tracking-tight text-foreground"
+              >
+                Six projects that survived the rule.
+              </p>
+              <p
+                class="font-editorial italic text-[15px] text-foreground-muted mt-2 mb-14"
+              >
+                06 projects / 2023–2026
+              </p>
+              <div>
+                <div>
+                  <div data-reveal style="--d: 0ms">
+                    <a
+                      href="projects/project-one.html"
+                      data-preview="images/ibm/ibm-watsonx-abstract-purple-swirl-orb.jpg"
+                      class="group grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[4rem_minmax(0,1fr)_minmax(0,360px)_4rem] items-start gap-x-8 border-t border-border py-8 transition-colors hover:bg-muted"
+                      ><span
+                        class="pt-2 font-editorial italic text-xs text-foreground-muted"
+                        >01</span
+                      >
+                      <div>
+                        <h3
+                          class="font-display text-2xl sm:text-4xl leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-2 group-hover:italic"
+                        >
+                          Propel &amp; AI Developer Tooling
+                        </h3>
+                        <p
+                          class="mt-2 font-editorial italic text-[15px] tracking-normal text-foreground-muted"
+                        >
+                          IBM PEO ·
+                          <span class="text-foreground">AI tooling</span>
+                        </p>
+                      </div>
+                      <p
+                        class="hidden pt-2 text-sm leading-relaxed text-foreground-muted sm:block"
+                      >
+                        AI-assisted developer productivity and engineering
+                        workflows at IBM PEO.
+                      </p>
+                      <span
+                        class="pt-2 font-editorial italic text-xs text-right text-foreground-muted"
+                        >2026</span
+                      >
+                    </a>
+                  </div>
+                  <div data-reveal style="--d: 60ms">
+                    <a
+                      href="projects/project-two.html"
+                      data-preview="images/ibm/ibm-corporate-abstract-mosaic-grey-blue.jpg"
+                      class="group grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[4rem_minmax(0,1fr)_minmax(0,360px)_4rem] items-start gap-x-8 border-t border-border py-8 transition-colors hover:bg-muted"
+                      ><span
+                        class="pt-2 font-editorial italic text-xs text-foreground-muted"
+                        >02</span
+                      >
+                      <div>
+                        <h3
+                          class="font-display text-2xl sm:text-4xl leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-2 group-hover:italic"
+                        >
+                          Carbon Design System Integrations
+                        </h3>
+                        <p
+                          class="mt-2 font-editorial italic text-[15px] tracking-normal text-foreground-muted"
+                        >
+                          IBM products ·
+                          <span class="text-foreground">Design systems</span>
+                        </p>
+                      </div>
+                      <p
+                        class="hidden pt-2 text-sm leading-relaxed text-foreground-muted sm:block"
+                      >
+                        Scalable enterprise React and web components for IBM
+                        products.
+                      </p>
+                      <span
+                        class="pt-2 font-editorial italic text-xs text-right text-foreground-muted"
+                        >2025</span
+                      >
+                    </a>
+                  </div>
+                  <div data-reveal style="--d: 120ms">
+                    <a
+                      href="projects/project-three.html"
+                      data-preview="images/ibm/ibm-corporate-isometric-city-blue.jpg"
+                      class="group grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[4rem_minmax(0,1fr)_minmax(0,360px)_4rem] items-start gap-x-8 border-t border-border py-8 transition-colors hover:bg-muted"
+                      ><span
+                        class="pt-2 font-editorial italic text-xs text-foreground-muted"
+                        >03</span
+                      >
+                      <div>
+                        <h3
+                          class="font-display text-2xl sm:text-4xl leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-2 group-hover:italic"
+                        >
+                          NebulaForge
+                        </h3>
+                        <p
+                          class="mt-2 font-editorial italic text-[15px] tracking-normal text-foreground-muted"
+                        >
+                          Personal ·
+                          <span class="text-foreground">Full-stack</span>
+                        </p>
+                      </div>
+                      <p
+                        class="hidden pt-2 text-sm leading-relaxed text-foreground-muted sm:block"
+                      >
+                        Next.js full-stack platform with Python utilities and
+                        modern web architecture.
+                      </p>
+                      <span
+                        class="pt-2 font-editorial italic text-xs text-right text-foreground-muted"
+                        >2025</span
+                      >
+                    </a>
+                  </div>
+                  <div data-reveal style="--d: 180ms">
+                    <a
+                      href="projects/project-four.html"
+                      data-preview="images/ibm/ibm-quantum-circuit-board-macro.jpg"
+                      class="group grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[4rem_minmax(0,1fr)_minmax(0,360px)_4rem] items-start gap-x-8 border-t border-border py-8 transition-colors hover:bg-muted"
+                      ><span
+                        class="pt-2 font-editorial italic text-xs text-foreground-muted"
+                        >04</span
+                      >
+                      <div>
+                        <h3
+                          class="font-display text-2xl sm:text-4xl leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-2 group-hover:italic"
+                        >
+                          Docling &amp; Agent Skills
+                        </h3>
+                        <p
+                          class="mt-2 font-editorial italic text-[15px] tracking-normal text-foreground-muted"
+                        >
+                          Tooling ·
+                          <span class="text-foreground">AI tooling</span>
+                        </p>
+                      </div>
+                      <p
+                        class="hidden pt-2 text-sm leading-relaxed text-foreground-muted sm:block"
+                      >
+                        High-performance document processing pipelines and agent
+                        tooling.
+                      </p>
+                      <span
+                        class="pt-2 font-editorial italic text-xs text-right text-foreground-muted"
+                        >2024</span
+                      >
+                    </a>
+                  </div>
+                  <div data-reveal style="--d: 240ms">
+                    <a
+                      href="projects/project-five.html"
+                      data-preview="images/ibm/isometric-cloud-blocks.jpg"
+                      class="group grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[4rem_minmax(0,1fr)_minmax(0,360px)_4rem] items-start gap-x-8 border-t border-border py-8 transition-colors hover:bg-muted"
+                      ><span
+                        class="pt-2 font-editorial italic text-xs text-foreground-muted"
+                        >05</span
+                      >
+                      <div>
+                        <h3
+                          class="font-display text-2xl sm:text-4xl leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-2 group-hover:italic"
+                        >
+                          Git Spice / Stacked PR Workflows
+                        </h3>
+                        <p
+                          class="mt-2 font-editorial italic text-[15px] tracking-normal text-foreground-muted"
+                        >
+                          Workflow ·
+                          <span class="text-foreground">Developer tooling</span>
+                        </p>
+                      </div>
+                      <p
+                        class="hidden pt-2 text-sm leading-relaxed text-foreground-muted sm:block"
+                      >
+                        Developer productivity tooling for stacked Git branches.
+                      </p>
+                      <span
+                        class="pt-2 font-editorial italic text-xs text-right text-foreground-muted"
+                        >2024</span
+                      >
+                    </a>
+                  </div>
+                  <div data-reveal style="--d: 300ms">
+                    <a
+                      href="projects/project-six.html"
+                      data-preview="images/ibm/ibm-corporate-abstract-white-paper-fold.jpg"
+                      class="group grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[4rem_minmax(0,1fr)_minmax(0,360px)_4rem] items-start gap-x-8 border-t border-border py-8 transition-colors hover:bg-muted"
+                      ><span
+                        class="pt-2 font-editorial italic text-xs text-foreground-muted"
+                        >06</span
+                      >
+                      <div>
+                        <h3
+                          class="font-display text-2xl sm:text-4xl leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-2 group-hover:italic"
+                        >
+                          Personal Digital Garden
+                        </h3>
+                        <p
+                          class="mt-2 font-editorial italic text-[15px] tracking-normal text-foreground-muted"
+                        >
+                          Self initiated ·
+                          <span class="text-foreground">Full-stack</span>
+                        </p>
+                      </div>
+                      <p
+                        class="hidden pt-2 text-sm leading-relaxed text-foreground-muted sm:block"
+                      >
+                        Portfolio, engineering writings, and design artifacts.
+                      </p>
+                      <span
+                        class="pt-2 font-editorial italic text-xs text-right text-foreground-muted"
+                        >2023</span
+                      >
+                    </a>
+                  </div>
+                  <div class="border-t border-border" aria-hidden="true"></div>
+                </div>
+                <div
+                  data-work-preview
+                  aria-hidden="true"
+                  class="pointer-events-none fixed left-0 top-0 z-40 hidden w-[300px] lg:block"
+                  style="opacity: 0; transition: opacity 0.25s"
+                >
+                  <img
+                    alt=""
+                    src="images/ibm/ibm-watsonx-abstract-purple-swirl-orb.jpg"
+                  />
+                </div>
+              </div>
+              <div class="mt-12">
+                <a
+                  href="work.html"
+                  class="font-editorial italic text-sm tracking-normal text-foreground-muted hover:text-foreground transition-colors"
+                  >Browse with filters ↗</a
+                >
+              </div>
+            </div>
+          </section>
+
+          <!-- Statement over image -->
+          <section class="relative overflow-hidden border-b border-border">
+            <div class="absolute overflow-hidden inset-0">
+              <img
+                data-parallax
+                alt="Close-up of a dark quantum circuit board"
+                loading="lazy"
+                class="absolute left-0 w-full object-cover"
+                src="images/ibm/ibm-quantum-circuit-board-macro.jpg"
+                style="top: -14%; height: 128%; will-change: transform"
+              />
+            </div>
+            <div aria-hidden="true" class="absolute inset-0 bg-black/70"></div>
+            <div
+              class="relative w-full px-6 sm:px-10 lg:px-16"
+              style="
+                padding-top: var(--space-9);
+                padding-bottom: var(--space-9);
+              "
+            >
+              <h2
+                class="font-display text-5xl sm:text-7xl leading-[0.98] tracking-tight text-white"
+              >
+                <span class="block">Clean systems,</span
+                ><span class="block">shipped with care.</span>
+              </h2>
+              <div
+                class="mt-14 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2"
+              >
+                <div>
+                  <p
+                    class="font-editorial italic text-[15px] tracking-normal text-accent-on-dark"
+                  >
+                    Rule/01
+                  </p>
+                  <p class="mt-2 text-sm leading-relaxed text-white/75">
+                    Strong typing and separation of concerns before cleverness.
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="font-editorial italic text-[15px] tracking-normal text-accent-on-dark"
+                  >
+                    Rule/02
+                  </p>
+                  <p class="mt-2 text-sm leading-relaxed text-white/75">
+                    Automate what repeats. Reuse what proves itself. Skip
+                    abstractions nobody needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Motto / principles -->
+          <div data-reveal>
+            <section
+              class="bg-inverse-band text-inverse-band-foreground border-b border-border"
+              style="
+                padding-top: var(--space-9);
+                padding-bottom: var(--space-9);
+              "
+            >
+              <div class="w-full px-6 sm:px-10 lg:px-16">
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,380px)] items-start gap-x-20 gap-y-12"
+                >
+                  <div>
+                    <h2
+                      class="font-display text-5xl sm:text-7xl leading-[0.98] tracking-tight text-inverse-band-foreground"
+                    >
+                      <span class="block">Production quality,</span
+                      ><span class="block">not demos.</span>
+                    </h2>
+                    <p
+                      class="mt-6 font-editorial italic text-[15px] tracking-normal text-inverse-band-muted"
+                    >
+                      Four years at IBM, from intern to engineering ownership.
+                    </p>
+                  </div>
+                  <div class="space-y-8 lg:pt-3">
+                    <div>
+                      <p
+                        class="font-editorial italic text-[15px] tracking-normal text-inverse-band-muted"
+                      >
+                        Principle/01
+                      </p>
+                      <p
+                        class="mt-2 text-sm leading-relaxed text-inverse-band-foreground"
+                      >
+                        Full-stack architecture and clean frontend systems.
+                      </p>
+                    </div>
+                    <div>
+                      <p
+                        class="font-editorial italic text-[15px] tracking-normal text-inverse-band-muted"
+                      >
+                        Principle/02
+                      </p>
+                      <p
+                        class="mt-2 text-sm leading-relaxed text-inverse-band-foreground"
+                      >
+                        Accessibility is a requirement: WCAG 2.2 AA from the
+                        first commit.
+                      </p>
+                    </div>
+                    <div>
+                      <p
+                        class="font-editorial italic text-[15px] tracking-normal text-inverse-band-muted"
+                      >
+                        Principle/03
+                      </p>
+                      <p
+                        class="mt-2 text-sm leading-relaxed text-inverse-band-foreground"
+                      >
+                        Performance and robust typing keep products fast and
+                        safe to change.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                  <figure class="sm:mt-12">
+                    <img
+                      alt="Blue isometric city of blocks and glass outlines"
+                      loading="lazy"
+                      class="w-full aspect-[3/4] object-cover transition-[filter] duration-700 grayscale"
+                      src="images/ibm/ibm-corporate-isometric-city-blue.jpg"
+                      style="border-radius: var(--radius-sm)"
+                    />
+                    <figcaption
+                      class="mt-3 font-editorial italic text-[15px] tracking-normal text-inverse-band-muted"
+                    >
+                      01 / Architecture
+                    </figcaption>
+                  </figure>
+                  <figure class="sm:mt-0">
+                    <img
+                      alt="Grid of grey and blue tiles"
+                      loading="lazy"
+                      class="w-full aspect-[3/4] object-cover transition-[filter] duration-700 grayscale"
+                      src="images/ibm/ibm-corporate-abstract-mosaic-grey-blue.jpg"
+                      style="border-radius: var(--radius-sm)"
+                    />
+                    <figcaption
+                      class="mt-3 font-editorial italic text-[15px] tracking-normal text-inverse-band-muted"
+                    >
+                      02 / Interfaces
+                    </figcaption>
+                  </figure>
+                  <figure class="sm:mt-24">
+                    <img
+                      alt="Abstract purple sphere of layered ribbons"
+                      loading="lazy"
+                      class="w-full aspect-[3/4] object-cover transition-[filter] duration-700 grayscale"
+                      src="images/ibm/ibm-watsonx-abstract-purple-swirl-orb.jpg"
+                      style="border-radius: var(--radius-sm)"
+                    />
+                    <figcaption
+                      class="mt-3 font-editorial italic text-[15px] tracking-normal text-inverse-band-muted"
+                    >
+                      03 / AI
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Services -->
+          <div data-reveal>
+            <section
+              id="services"
+              class="bg-[var(--color-canvas-soft)]"
+              style="
+                padding-top: var(--space-9);
+                padding-bottom: var(--space-9);
+                border-bottom: 1px solid var(--color-border);
+              "
+            >
+              <div class="w-full px-6 sm:px-10 lg:px-16">
+                <p
+                  class="font-editorial italic text-[15px] text-foreground-muted mb-10"
+                >
+                  Services / what to hire me for
+                </p>
+                <div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_minmax(0,460px)] gap-x-12 gap-y-3 border-t border-border py-8"
+                  >
+                    <div>
+                      <h3
+                        class="font-display text-2xl sm:text-4xl tracking-tight text-foreground"
+                      >
+                        Full-Stack Architecture &amp; Clean Frontend Systems
+                      </h3>
+                      <p
+                        class="font-editorial italic text-[15px] text-foreground-muted mt-2"
+                      >
+                        Service/<span class="text-foreground">01</span>
+                      </p>
+                    </div>
+                    <p
+                      class="text-sm leading-relaxed text-foreground-muted sm:pt-2"
+                    >
+                      Component design, state and data flow, and separation of
+                      concerns for React and Next.js apps that stay
+                      maintainable.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_minmax(0,460px)] gap-x-12 gap-y-3 border-t border-border py-8"
+                  >
+                    <div>
+                      <h3
+                        class="font-display text-2xl sm:text-4xl tracking-tight text-foreground"
+                      >
+                        Enterprise Design System (Carbon) &amp; Accessibility
+                        (WCAG 2.2 AA)
+                      </h3>
+                      <p
+                        class="font-editorial italic text-[15px] text-foreground-muted mt-2"
+                      >
+                        Service/<span class="text-foreground">02</span>
+                      </p>
+                    </div>
+                    <p
+                      class="text-sm leading-relaxed text-foreground-muted sm:pt-2"
+                    >
+                      Carbon implementation in React and web components, built
+                      to meet WCAG 2.2 AA.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_minmax(0,460px)] gap-x-12 gap-y-3 border-t border-border py-8"
+                  >
+                    <div>
+                      <h3
+                        class="font-display text-2xl sm:text-4xl tracking-tight text-foreground"
+                      >
+                        AI Tooling, Developer Productivity &amp; Engineering
+                        Workflows
+                      </h3>
+                      <p
+                        class="font-editorial italic text-[15px] text-foreground-muted mt-2"
+                      >
+                        Service/<span class="text-foreground">03</span>
+                      </p>
+                    </div>
+                    <p
+                      class="text-sm leading-relaxed text-foreground-muted sm:pt-2"
+                    >
+                      AI-assisted development, agent skills, and automation that
+                      remove repeated work from team workflows.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_minmax(0,460px)] gap-x-12 gap-y-3 border-t border-border py-8"
+                  >
+                    <div>
+                      <h3
+                        class="font-display text-2xl sm:text-4xl tracking-tight text-foreground"
+                      >
+                        Performance, Modern React/Next.js &amp; Robust Typing
+                      </h3>
+                      <p
+                        class="font-editorial italic text-[15px] text-foreground-muted mt-2"
+                      >
+                        Service/<span class="text-foreground">04</span>
+                      </p>
+                    </div>
+                    <p
+                      class="text-sm leading-relaxed text-foreground-muted sm:pt-2"
+                    >
+                      Profiling, rendering strategy, and strict TypeScript that
+                      keep products fast and safe to change.
+                    </p>
+                  </div>
+                  <div class="border-t border-border" aria-hidden="true"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Testimonial / marquee -->
+          <section
+            class="bg-inverse-band text-inverse-band-foreground overflow-hidden"
+            style="
+              padding-top: var(--space-9);
+              padding-bottom: var(--space-9);
+              border-bottom: 1px solid var(--color-border);
+            "
+          >
+            <div class="w-full px-6 sm:px-10 lg:px-16">
+              <blockquote
+                class="max-w-4xl font-display text-2xl sm:text-4xl leading-[1.2] tracking-tight"
+              >
+                “Root cause first, then fix. Automate anything you do twice, and
+                ship the version you would be happy to maintain.”
+              </blockquote>
+              <p class="mt-8 font-editorial italic text-sm tracking-normal">
+                Yashraj Singh Boparai · Working principle
+              </p>
+            </div>
+            <div class="mt-14 border-t border-inverse-band-foreground/20 pt-8">
+              <div
+                class="portfolio-marquee-track flex w-max"
+                style="
+                  animation: 30s linear 0s infinite normal none running
+                    portfolio-marquee;
+                "
+              >
+                <div class="flex shrink-0 items-center">
+                  <span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >React<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Next.js<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >TypeScript<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Carbon<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Angular<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Python<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >PostgreSQL<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >MongoDB<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  >
+                </div>
+                <div aria-hidden="true" class="flex shrink-0 items-center">
+                  <span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >React<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Next.js<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >TypeScript<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Carbon<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Angular<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >Python<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >PostgreSQL<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  ><span
+                    class="whitespace-nowrap px-8 font-editorial italic text-base tracking-normal"
+                    >MongoDB<span aria-hidden="true" class="ml-8 opacity-50"
+                      >·</span
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA -->
+          <div data-reveal>
+            <section
+              id="contact"
+              class="bg-[var(--color-canvas-soft)] paper-grid border-b-0"
+              style="
+                padding-top: var(--space-9);
+                padding-bottom: var(--space-9);
+                border-bottom: 1px solid var(--color-border);
+              "
+            >
+              <div class="w-full px-6 sm:px-10 lg:px-16">
+                <p
+                  class="font-editorial italic text-[15px] text-foreground-muted mb-6"
+                >
+                  Next project
+                </p>
+                <a href="contact.html" class="group block"
+                  ><span class="font-display text-display-hero text-foreground"
+                    ><span>Let’s work</span
+                    ><span class="block"
+                      ><span>together</span
+                      ><span
+                        aria-hidden="true"
+                        class="inline-block ml-[0.2em] text-foreground transition-transform duration-300 group-hover:translate-x-3"
+                        >→</span
+                      ></span
+                    ></span
+                  ></a
+                >
+                <p
+                  class="mt-10 font-editorial italic text-[15px] tracking-normal text-foreground-muted"
+                >
+                  yashrajcu@gmail.com · Gandhinagar, India
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bg-footer-band text-footer-band-foreground">
+        <div class="w-full pt-16 pb-8 px-6 sm:px-10 lg:px-16">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_2fr] gap-10 lg:gap-12"
+          >
+            <div>
+              <div class="mb-5 font-display text-3xl font-normal leading-tight">
+                Yashraj Singh Boparai
+              </div>
+              <p
+                class="text-sm max-w-[280px] font-sans leading-[1.8] tracking-[0.4px] text-footer-band-foreground/85"
+              >
+                Full-Stack Software Developer at IBM India Software Labs,
+                Product Excellence Office.
+              </p>
+            </div>
+            <div>
+              <h6
+                class="text-xs mb-5 font-sans font-bold uppercase tracking-[1.2px] leading-[1.8] text-footer-band-foreground/60"
+              >
+                Site
+              </h6>
+              <ul
+                class="flex flex-col gap-3 text-sm font-sans leading-[1.8] tracking-[0.4px]"
+              >
+                <li>
+                  <a
+                    href="work.html"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Work</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6
+                class="text-xs mb-5 font-sans font-bold uppercase tracking-[1.2px] leading-[1.8] text-footer-band-foreground/60"
+              >
+                Elsewhere
+              </h6>
+              <ul
+                class="flex flex-col gap-3 text-sm font-sans leading-[1.8] tracking-[0.4px]"
+              >
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/yashraj-singh-boparai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6
+                class="text-xs mb-5 font-sans font-bold uppercase tracking-[1.2px] leading-[1.8] text-footer-band-foreground/60"
+              >
+                Get in touch
+              </h6>
+              <ul
+                class="flex flex-col gap-3 text-sm font-sans leading-[1.8] tracking-[0.4px]"
+              >
+                <li>
+                  <a
+                    href="contact.html"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >Start a conversation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yashrajcu@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="transition-colors text-footer-band-foreground/85 hover:text-footer-band-foreground"
+                    >yashrajcu@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="mt-12 pt-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 text-xs font-sans tracking-[0.4px] border-t border-white/15 text-footer-band-foreground/70"
+          >
+            <span
+              >© 2026 Yashraj Singh Boparai.
+              <span>All rights reserved.</span></span
+            >
+            <span class="flex flex-wrap items-center gap-4"
+              ><a
+                href="https://getdesign.md/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-colors opacity-85 hover:opacity-100"
+                >Template from getdesign.md</a
+              ></span
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>
