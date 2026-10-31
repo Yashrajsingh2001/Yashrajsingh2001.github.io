@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Sun Halo Accent Palette (#ffe546 accent to #fdfea2 lemon) -->
+    <linearGradient id="halo-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe546" />
+      <stop offset="100%" stop-color="#fdfea2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Squircle in Theme Halo Yellow -->
+  <rect width="64" height="64" rx="14" fill="url(#halo-yellow)" />
+  
+  <!-- Contrast Dark Charcoal Monogram Glyphs (#121212) -->
+  <g fill="none" stroke="#121212" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Y -->
+    <path d="M12 23 L19 32 L19 43 M26 23 L19 32" />
+    
+    <!-- S -->
+    <path d="M38 25 C36 23 31.5 23 30 25.5 C28.5 28 30 30.5 33 32 C36.5 33.5 38 36 36.5 39.5 C35 43 30 43 28 41" />
+    
+    <!-- B -->
+    <path d="M43 23 L43 43 M42 23 L49 23 C52 23 52 32 46.5 32 M43 32 L50 32 C53.5 32 53.5 43 43 43" />
+  </g>
+</svg>
