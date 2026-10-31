@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing software development projects, AI developer tooling, full-stack applications, and design system engineering.
 
-🌐 **Live Website**: [https://yashrajsingh2001.github.io/](https://yashrajsingh2001.github.io/)
+🌐 **Live Website**: [https://ysb.is-a.dev/](https://ysb.is-a.dev/) (also accessible at [https://yashrajsingh2001.github.io/](https://yashrajsingh2001.github.io/))
 
 ---
 
@@ -23,6 +23,7 @@ Personal portfolio website showcasing software development projects, AI develope
 │   ├── index.html              # Homepage
 │   ├── work.html               # Filterable work & project gallery
 │   ├── contact.html            # Contact page with pre-filled Gmail compose
+│   ├── CNAME                   # Custom domain pointer (ysb.is-a.dev)
 │   ├── .nojekyll               # Bypasses Jekyll on GitHub Pages
 │   ├── projects/               # Case study detail pages
 │   │   ├── project-one.html    # Propel & AI Developer Tooling

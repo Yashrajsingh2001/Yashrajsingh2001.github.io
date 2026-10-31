@@ -4,8 +4,12 @@ Static portfolio for Yashraj Singh Boparai. Pure HTML/CSS/JS deployed to GitHub 
 
 ## Core Rules & Guardrails
 
-- **Live URL**: `https://yashrajsingh2001.github.io/`
+- **Live URLs**:
+  - Primary Custom Domain: [`https://ysb.is-a.dev/`](https://ysb.is-a.dev/)
+  - Default GitHub Pages: [`https://yashrajsingh2001.github.io/`](https://yashrajsingh2001.github.io/)
+- **Custom Domain (`src/CNAME`)**: Contains `ysb.is-a.dev`. Do not delete or rename.
 - **Source root**: All web pages, styles, scripts, and media must stay inside `src/`.
+- **Favicon & Assets**: Pure static HTML multi-page site. Always include explicit `<link rel="icon" type="image/svg+xml" href=".../assets/favicon.svg" />` in every single HTML file's `<head>`.
 - **`app.css` (`src/assets/app.css`)**: Vendor Tailwind bundle. Never edit, recompile, or format.
 - **`.nojekyll` (`src/.nojekyll`)**: Must stay completely empty (0 bytes). Skips Jekyll on GitHub Pages.
 - **Zero build step**: Pure static site. No webpack/vite/bundler required.
@@ -30,6 +34,7 @@ src/
 ├── index.html            # / (home)
 ├── work.html             # /work.html
 ├── contact.html          # /contact.html
+├── CNAME                 # Custom domain record (ysb.is-a.dev)
 ├── .nojekyll             # Empty Jekyll bypass
 ├── projects/             # /projects/project-*.html
 ├── assets/               # app.css, site.css, fonts.css, main.js, fonts/
